@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -43,7 +44,7 @@
     <div class="jumbotron text-center">
       <img src="img/yoga.png" alt="Yoga Febian Iriandy" width="200px" class="rounded-circle" />
       <h1 class="display-4 mt-2">Yoga Febian Iriandy</h1>
-      <p class="lead">Front-End Dev</p>
+      <p class="lead">Full Stack Web Developer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -64,10 +65,10 @@
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ut nesciunt praesentium cum nisi asperiores provident. Accusantium facilis perferendis sunt.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis totam aperiam a dolor odit corporis provident ut, iusto asperiores consequatur amet, nemo officiis quis!</p>
           </div>
         </div>
@@ -154,6 +155,19 @@
 
     <!-- Akhir Projects -->
 
+    <!-- Gallery -->
+    
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+    </section>
+
+    <!-- Akhir Gallery -->
+
     <!-- Contact -->
 
     <section id="contact">
@@ -173,15 +187,15 @@
             <form name="yoga-contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required/>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required/>
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
 
@@ -213,6 +227,13 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbzkY8G41z8XAweH7i19QTadxs3dPDvw9DE9yazwpbG15w0FIuJ6MXUs9ApwgT4ZAW2R/exec";
